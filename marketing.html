@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>التسويق عبر منصات التواصل | تك - أفضل شركة تسويق رقمي</title>
+    <meta name="description" content="نقدم خدمات التسويق عبر منصات التواصل الاجتماعي: إدارة صفحات، استراتيجيات تسويق، إعلانات ممولة، تحليل بيانات، وزيادة المبيعات. نساعدك في بناء حضور قوي لعلامتك التجارية على الإنترنت.">
+    <meta name="keywords" content="تسويق رقمي, تسويق عبر التواصل, إدارة صفحات, إعلانات فيسبوك, إعلانات انستقرام, تسويق تيك توك, تحسين محركات البحث, استراتيجيات تسويق">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="التسويق عبر منصات التواصل | تك">
+    <meta property="og:description" content="نساعدك في بناء حضور قوي لعلامتك التجارية على منصات التواصل الاجتماعي">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة التسويق عبر منصات التواصل */
+        .page-header {
+            background: linear-gradient(135deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* منصات التواصل */
+        .platforms-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .platform-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .platform-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .platform-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .platform-icon i {
+            font-size: 3rem;
+            color: #fff;
+        }
+        
+        .platform-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .platform-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* استراتيجيات التسويق */
+        .strategies-section {
+            padding: 80px 0;
+        }
+        
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .strategy-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .strategy-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .strategy-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .strategy-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .strategy-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* مميزات خدماتنا */
+        .features-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* معرض الأعمال */
+        .portfolio-showcase {
+            padding: 80px 0;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .showcase-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+        
+        .showcase-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 140, 255, 0.95), rgba(0, 77, 154, 0.85));
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-overlay {
+            opacity: 1;
+        }
+        
+        .showcase-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .showcase-content {
+            color: #fff;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-content {
+            transform: translateY(0);
+        }
+        
+        .showcase-content h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .showcase-content p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* العملية */
+        .process-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            background: var(--white-color);
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* أدوات التسويق */
+        .tools-section {
+            padding: 80px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tool-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .tool-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .tool-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .tool-item p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(0, 140, 255, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي */
+        .dark-mode .platform-card,
+        .dark-mode .strategy-card,
+        .dark-mode .feature-card,
+        .dark-mode .step,
+        .dark-mode .tool-item,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .platform-card p,
+        .dark-mode .strategy-card p,
+        .dark-mode .feature-card p,
+        .dark-mode .step p,
+        .dark-mode .tool-item p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .platforms-section,
+        .dark-mode .features-section,
+        .dark-mode .process-section,
+        .dark-mode .faq-section {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .strategy-icon,
+        .dark-mode .feature-icon,
+        .dark-mode .tool-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .strategy-icon i,
+        .dark-mode .feature-icon i,
+        .dark-mode .tool-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عناء </a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>التسويق عبر منصات التواصل</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">التسويق عبر منصات التواصل الاجتماعي</h1>
+            <p data-aos="fade-up" data-aos-delay="100">نبني حضوراً قوياً لعلامتك التجارية ونساعدك في الوصول إلى جمهورك المستهدف</p>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="platforms-section">
+        <div class="container">
+            <h2 data-aos="fade-up">منصات التواصل التي نعمل عليها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم خدماتنا على جميع منصات التواصل الاجتماعي</p>
+            
+            <div class="platforms-grid">
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <h3>فيسبوك</h3>
+                    <p>إدارة صفحات الفيسبوك، إعلانات ممولة، استهداف دقيق للجمهور، وتحليل النتائج لزيادة المبيعات والتفاعل.</p>
+                </div>
+                
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="platform-icon">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <h3>انستقرام</h3>
+                    <p>تصميم محتوى بصري جذاب، إعلانات ستوري وفييد، تسويق عبر المؤثرين، وزيادة المتابعين والتفاعل.</p>
+                </div>
+                
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="platform-icon">
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                    <h3>تيك توك</h3>
+                    <p>إنشاء محتوى فيديو تفاعلي، استهداف فئة الشباب، حملات تحدي، وزيادة الانتشار السريع للعلامة التجارية.</p>
+                </div>
+                
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="platform-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                    <h3>تويتر (X)</h3>
+                    <p>إدارة التغريدات، التفاعل مع المتابعين، إعلانات ترويجية، وتحليل اتجاهات السوق.</p>
+                </div>
+                
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="platform-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h3>لينكد إن</h3>
+                    <p>تسويق B2B، بناء علاقات مهنية، إعلانات مستهدفة للشركات، وتعزيز الوجود المؤسسي.</p>
+                </div>
+                
+                <div class="platform-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="platform-icon">
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <h3>يوتيوب</h3>
+                    <p>إنشاء محتوى فيديو احترافي، إعلانات فيديو، تحسين محركات البحث، وبناء قناة ناجحة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies-section">
+        <div class="container">
+            <h2 data-aos="fade-up">استراتيجيات التسويق</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم حلولاً متكاملة تناسب أهدافك التسويقية</p>
+            
+            <div class="strategies-grid">
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="strategy-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h4>استراتيجية محتوى</h4>
+                    <p>نضع خطة محتوى متكاملة تناسب جمهورك المستهدف وتعزز من تفاعلهم مع علامتك التجارية.</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="strategy-icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <h4>إعلانات ممولة</h4>
+                    <p>إدارة حملات إعلانية احترافية على جميع المنصات مع استهداف دقيق وتحليل عائد الاستثمار.</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="strategy-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h4>تسويق المؤثرين</h4>
+                    <p>التعاون مع المؤثرين المناسبين لعلامتك التجارية لزيادة الوصول والمصداقية.</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="strategy-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>تحليل البيانات</h4>
+                    <p>تحليل أداء الحملات وتقديم تقارير دورية لتحسين النتائج وزيادة العائد على الاستثمار.</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="strategy-icon">
+                        <i class="bi bi-chat-heart"></i>
+                    </div>
+                    <h4>إدارة المجتمع</h4>
+                    <p>التفاعل مع المتابعين، الرد على الاستفسارات، وبناء علاقات قوية مع جمهورك.</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="strategy-icon">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                    <h4>تسويق المتاجر</h4>
+                    <p>تسويق المنتجات عبر منصات التواصل، إعلانات المنتجات، وزيادة المبيعات المباشرة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات خدمات التسويق لدينا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ما الذي يجعل خدماتنا مميزة؟</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-target"></i>
+                    </div>
+                    <h4>استهداف دقيق</h4>
+                    <p>نستخدم أدوات متقدمة لاستهداف الجمهور المناسب بناءً على الموقع، الاهتمامات، والسلوكيات.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-bar-chart"></i>
+                    </div>
+                    <h4>نتائج قابلة للقياس</h4>
+                    <p>نقدم تقارير دورية تحليلية توضح أداء الحملات والعائد على الاستثمار.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-rocket"></i>
+                    </div>
+                    <h4>زيادة المبيعات</h4>
+                    <p>نركز على تحقيق نتائج ملموسة تزيد من مبيعاتك وعائد الاستثمار.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h4>توفير الوقت والجهد</h4>
+                    <p>نتولى إدارة حملاتك التسويقية بالكامل لتتفرغ أنت لإدارة أعمالك الأساسية.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-bullseye"></i>
+                    </div>
+                    <h4>تحسين مستمر</h4>
+                    <p>نقوم بتحليل الأداء وتحسين الاستراتيجيات باستمرار لتحقيق أفضل النتائج.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>دعم فني 24/7</h4>
+                    <p>فريق دعم متاح على مدار الساعة للإجابة على استفساراتك ومتابعة حملاتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 data-aos="fade-up">أدوات التسويق التي نستخدمها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أحدث الأدوات لتحقيق أفضل النتائج</p>
+            
+            <div class="tools-grid">
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="bi bi-meta"></i>
+                    </div>
+                    <h4>Meta Ads Manager</h4>
+                    <p>إدارة إعلانات فيسبوك وانستقرام</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tool-icon">
+                        <i class="bi bi-google"></i>
+                    </div>
+                    <h4>Google Analytics</h4>
+                    <p>تحليل البيانات وقياس الأداء</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="bi bi-calendar-week"></i>
+                    </div>
+                    <h4>Hootsuite</h4>
+                    <p>جدولة المنشورات وإدارة المحتوى</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tool-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4>SEMrush</h4>
+                    <p>تحليل الكلمات المفتاحية والمنافسين</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="bi bi-envelope-paper"></i>
+                    </div>
+                    <h4>Mailchimp</h4>
+                    <p>التسويق عبر البريد الإلكتروني</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tool-icon">
+                        <i class="bi bi-bar-chart-steps"></i>
+                    </div>
+                    <h4>Buffer</h4>
+                    <p>تحليل أداء منشورات التواصل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <h2 data-aos="fade-up">نجاحاتنا في التسويق</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نماذج من حملاتنا الناجحة لعملائنا</p>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="m1.jpeg" alt="حملة فيسبوك ناجحة">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>حملة فيسبوك</h4>
+                            <p>زيادة المبيعات بنسبة 300% خلال شهر</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="m2.jpeg" alt="حملة انستقرام">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>حملة انستقرام</h4>
+                            <p>زيادة المتابعين 500% في 3 أشهر</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="m3.webp" alt="حملة تيك توك">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>حملة تيك توك</h4>
+                            <p>مليون مشاهدة خلال أسبوع</p>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="m4.webp" alt="حملة يوتيوب">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>حملة يوتيوب</h4>
+                            <p>500 ألف مشاهدة فيديو</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="m5.jpeg" alt="حملة تسويق متكاملة">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>حملة متكاملة</h4>
+                            <p>زيادة الوعي بالعلامة التجارية 400%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <a href="index.html#portfolio" class="btn btn-primary">شاهد المزيد من أعمالنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 data-aos="fade-up">عملية التسويق لدينا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">كيف نعمل لتحقيق أفضل النتائج</p>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h4>تحليل السوق</h4>
+                    <p>نقوم بتحليل السوق والمنافسين وفهم جمهورك المستهدف</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h4>وضع الاستراتيجية</h4>
+                    <p>نضع خطة تسويقية متكاملة تناسب أهدافك وميزانيتك</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h4>إنشاء المحتوى</h4>
+                    <p>نصمم محتوى جذاب يناسب كل منصة وجمهور</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h4>تنفيذ الحملات</h4>
+                    <p>نطلق الحملات الإعلانية ونديرها باحترافية</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <h4>التحليل والتحسين</h4>
+                    <p>نحلل النتائج ونحسن الأداء باستمرار</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                    <div class="step-number">6</div>
+                    <h4>التقارير الدورية</h4>
+                    <p>نقدم تقارير مفصلة عن أداء الحملات والنتائج</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن التسويق عبر التواصل</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>كم تستغرق مدة ظهور النتائج؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف المدة حسب نوع الحملة والمنصة المستهدفة. عادةً ما تبدأ النتائج الأولية بالظهور خلال 2-4 أسابيع، بينما تظهر النتائج الكاملة بعد 2-3 أشهر من بدء الحملات.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>هل تقدمون ضمان على النتائج؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم ضمان على جودة العمل ونتائج الحملات ضمن الإطار المتفق عليه. نلتزم بتحقيق الأهداف المحددة في خطة التسويق مع إمكانية التعديل والتحسين المستمر.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>ما هي تكلفة خدمات التسويق؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف التكلفة حسب المنصات المستهدفة، حجم الحملات، والمدة الزمنية. نقدم باقات مرنة تناسب مختلف الميزانيات، ونقدم عرض سعر مجاني بعد دراسة احتياجاتك.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>هل تناسب خدماتكم الشركات الناشئة؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، لدينا باقات خاصة للشركات الناشئة والصغيرة تتناسب مع ميزانياتهم المحدودة. نساعدهم في بناء حضور قوي على منصات التواصل وتحقيق نمو مستدام.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>كيف يتم قياس نجاح الحملات؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نستخدم مجموعة من مؤشرات الأداء (KPIs) مثل: عدد المتابعين الجدد، معدل التفاعل، عدد النقرات، التحويلات، والمبيعات. نقدم تقارير تحليلية أسبوعية وشهرية توضح التقدم المحقق.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">هل تريد بناء حضور قوي لعلامتك التجارية؟</h2>
+            <p data-aos="fade-up" data-aos-delay="100">دعنا نساعدك في الوصول إلى جمهورك المستهدف وتحقيق أهدافك التسويقية</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20التسويق%20الرقمي" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>

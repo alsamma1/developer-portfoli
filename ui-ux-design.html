@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>تصميم UI/UX | تك - أفضل شركة تصميم تجربة مستخدم وواجهات</title>
+    <meta name="description" content="نقدم خدمات تصميم واجهات المستخدم UI وتجربة المستخدم UX باحترافية. نصمم تجارب رقمية مميزة تجذب العملاء وتحسن التفاعل مع منتجك الرقمي.">
+    <meta name="keywords" content="تصميم UI, تصميم UX, تجربة مستخدم, واجهات المستخدم, تصميم تجربة المستخدم, تصميم تطبيقات, تصميم مواقع">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="تصميم UI/UX | تك">
+    <meta property="og:description" content="نصمم تجارب مستخدم مميزة وواجهات جذابة تجعل منتجك الرقمي لا يُقاوم">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة UI/UX - بنفس ألوان الموقع الرئيسي */
+        :root {
+            --uiux-primary: #008cff;
+            --uiux-gradient-start: #007bff;
+            --uiux-gradient-end: #004d9a;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--uiux-gradient-start) 0%, var(--uiux-gradient-end) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* ما هو UI/UX */
+        .what-is-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .what-is-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .what-is-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .what-is-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .what-is-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--uiux-gradient-start), var(--uiux-gradient-end));
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .what-is-icon i {
+            font-size: 3.5rem;
+            color: #fff;
+        }
+        
+        .what-is-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .what-is-card p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .what-is-list {
+            text-align: right;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .what-is-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+        }
+        
+        .what-is-list li i {
+            color: var(--uiux-primary);
+            font-size: 1.2rem;
+        }
+        
+        /* منهجية العمل */
+        .process-section {
+            padding: 80px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            position: relative;
+            background: var(--white-color);
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--uiux-gradient-start), var(--uiux-gradient-end));
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .step h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .step p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* أدوات التصميم */
+        .tools-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tool-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .tool-icon i {
+            font-size: 2.5rem;
+            color: var(--uiux-primary);
+        }
+        
+        .tool-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .tool-item p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        /* مميزات خدماتنا */
+        .features-section {
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--uiux-primary);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* معرض الأعمال */
+        .portfolio-showcase {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .showcase-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+            cursor: pointer;
+        }
+        
+        .showcase-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 140, 255, 0.95), rgba(0, 77, 154, 0.85));
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-overlay {
+            opacity: 1;
+        }
+        
+        .showcase-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .showcase-content {
+            color: #fff;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-content {
+            transform: translateY(0);
+        }
+        
+        .showcase-content h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .showcase-content p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(0, 140, 255, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--uiux-primary);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--uiux-gradient-start), var(--uiux-gradient-end));
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--uiux-primary);
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي */
+        .dark-mode .what-is-card,
+        .dark-mode .step,
+        .dark-mode .tool-item,
+        .dark-mode .feature-card,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .what-is-card p,
+        .dark-mode .what-is-list li,
+        .dark-mode .step p,
+        .dark-mode .tool-item p,
+        .dark-mode .feature-card p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .what-is-section,
+        .dark-mode .tools-section,
+        .dark-mode .portfolio-showcase {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .what-is-list li i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .tool-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .tool-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .feature-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .feature-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عناء</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>تصميم UI/UX</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">تصميم UI/UX</h1>
+            <p data-aos="fade-up" data-aos-delay="100">نصنع تجارب رقمية لا تُنسى تجمع بين الجمال والوظائف</p>
+        </div>
+    </section>
+
+    <!-- What is UI/UX Section -->
+    <section class="what-is-section">
+        <div class="container">
+            <h2 data-aos="fade-up">ما هو تصميم UI/UX؟</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">فهم الفرق بين تصميم واجهات المستخدم وتجربة المستخدم</p>
+            
+            <div class="what-is-grid">
+                <div class="what-is-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="what-is-icon">
+                        <i class="bi bi-brush"></i>
+                    </div>
+                    <h3>تصميم واجهات المستخدم (UI)</h3>
+                    <p>UI هو ما يراه المستخدم ويتفاعل معه مباشرة. يشمل تصميم الشاشات، الأزرار، الأيقونات، والطباعة.</p>
+                    <ul class="what-is-list">
+                        <li><i class="bi bi-check-circle-fill"></i> تصميم الشاشات والواجهات</li>
+                        <li><i class="bi bi-check-circle-fill"></i> اختيار الألوان والخطوط المناسبة</li>
+                        <li><i class="bi bi-check-circle-fill"></i> تصميم الأيقونات والأزرار</li>
+                        <li><i class="bi bi-check-circle-fill"></i> إنشاء نظام تصميم متكامل</li>
+                        <li><i class="bi bi-check-circle-fill"></i> ضمان الاتساق البصري</li>
+                    </ul>
+                </div>
+                
+                <div class="what-is-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="what-is-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3>تجربة المستخدم (UX)</h3>
+                    <p>UX هو شعور المستخدم أثناء استخدام المنتج. يهتم بسهولة الاستخدام وسلاسة التفاعل.</p>
+                    <ul class="what-is-list">
+                        <li><i class="bi bi-check-circle-fill"></i> بحث وتحليل سلوك المستخدمين</li>
+                        <li><i class="bi bi-check-circle-fill"></i> إنشاء خرائط رحلة المستخدم</li>
+                        <li><i class="bi bi-check-circle-fill"></i> تصميم الهيكل والمخططات</li>
+                        <li><i class="bi bi-check-circle-fill"></i> اختبار قابلية الاستخدام</li>
+                        <li><i class="bi bi-check-circle-fill"></i> تحسين التجربة بناءً على البيانات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 data-aos="fade-up">منهجية عملنا في UI/UX</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نتبع منهجية علمية لضمان أفضل تجربة للمستخدم</p>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h4>البحث والتحليل</h4>
+                    <p>نقوم بدراسة جمهورك المستهدف، تحليل المنافسين، وفهم احتياجات المستخدمين الحقيقية.</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h4>هيكلة المعلومات</h4>
+                    <p>ننظم محتوى المنتج ونصمم خرائط الموقع والمخططات الهيكلية.</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h4>تصميم الإطارات</h4>
+                    <p>نصمم إطارات أولية (Wireframes) لتحديد تدفق المستخدم وتوزيع العناصر.</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h4>النماذج التفاعلية</h4>
+                    <p>ننشئ نماذج تفاعلية عالية الدقة لاختبار التجربة قبل التطوير.</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <h4>اختبار المستخدم</h4>
+                    <p>نجري اختبارات مع مستخدمين حقيقيين ونجمع الملاحظات للتحسين.</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                    <div class="step-number">6</div>
+                    <h4>التسليم والدعم</h4>
+                    <p>نسلم ملفات التصميم النهائية مع دليل الاستخدام ودعم مستمر.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 data-aos="fade-up">أدوات التصميم التي نستخدمها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أحدث الأدوات لتصميم احترافي</p>
+            
+            <div class="tools-grid">
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="bi bi-figma"></i>
+                    </div>
+                    <h4>Figma</h4>
+                    <p>تصميم واجهات وتعاون فريق في الوقت الفعلي</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tool-icon">
+                        <i class="bi bi-adobe"></i>
+                    </div>
+                    <h4>Adobe XD</h4>
+                    <p>تصميم نماذج تفاعلية عالية الدقة</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="bi bi-sketch"></i>
+                    </div>
+                    <h4>Sketch</h4>
+                    <p>تصميم واجهات متقدمة لأنظمة macOS</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tool-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+                    <h4>Illustrator</h4>
+                    <p>تصميم الأيقونات والرسوم المتجهة</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                    <h4>Maze</h4>
+                    <p>اختبار قابلية الاستخدام وتحليل النتائج</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tool-icon">
+                        <i class="bi bi-diagram-3"></i>
+                    </div>
+                    <h4>Miro</h4>
+                    <p>رسم الخرائط الذهنية وتخطيط التجربة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات خدماتنا في UI/UX</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ما الذي يجعل تصميماتنا مميزة؟</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>تصميم يركز على المستخدم</h4>
+                    <p>نضع المستخدم في قلب عملية التصميم، ونتأكد من أن كل قرار يخدم احتياجاته الحقيقية.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>قائم على البيانات</h4>
+                    <p>نعتمد على البيانات والأبحاث في اتخاذ قرارات التصميم، وليس فقط الحدس والإبداع.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4>تصميم متجاوب</h4>
+                    <p>نصمم تجارب سلسة تعمل بشكل مثالي على جميع الأجهزة - جوال، تابلت، كمبيوتر.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h4>تحسين مستمر</h4>
+                    <p>نواصل تحسين التصميم بناءً على ملاحظات المستخدمين وتحليل الأداء.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-universal-access"></i>
+                    </div>
+                    <h4>إمكانية الوصول</h4>
+                    <p>نتأكد من أن تصميماتنا متاحة للجميع بما في ذلك ذوي الاحتياجات الخاصة.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-file-code"></i>
+                    </div>
+                    <h4>توثيق كامل</h4>
+                    <p>نقدم نظام تصميم متكامل ودليل استخدام لتسهيل عملية التطوير.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <h2 data-aos="fade-up">أعمالنا في تصميم UI/UX</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نماذج من تصميماتنا التي تنال إعجاب العملاء</p>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="u1.webp" alt="تصميم تطبيق جوال">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>تطبيق  متجر اكتروني</h4>
+                            <p>تصميم واجهات مستخدم بسيطة وسهلة الاستخدام</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="u2.png" alt="تصميم موقع إلكتروني">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>منصة  للخدمات</h4>
+                            <p>تجربة انفوجرافيك تفاعلي سلسة تربط العملاء بالتقنيين</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="u3.jpg" alt="تصميم متجر إلكتروني">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>متجر إلكتروني</h4>
+                            <p>تصميم واجهات تسوق سهلة وجذابة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="u4.webp" alt="تصميم تطبيق ديني">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>تطبيق فاذكروني</h4>
+                            <p>واجهات مستخدم هادئة تناسب التجربة الروحانية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="u5.jpg" alt="تصميم لوحة تحكم">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>لوحة تحكم إدارية</h4>
+                            <p>تصميم نظام إدارة متكامل وسهل الاستخدام</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <a href="index.html#portfolio" class="btn btn-primary">شاهد المزيد من أعمالنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن تصميم UI/UX</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>ما الفرق بين UI و UX؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>UI (واجهات المستخدم) هو ما يراه المستخدم ويلمسه - التصميم المرئي، الألوان، الأزرار. UX (تجربة المستخدم) هو شعور المستخدم أثناء استخدام المنتج - سهولة الاستخدام، سلاسة التنقل. كلاهما يعملان معاً لخلق منتج ناجح.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>كم تستغرق عملية تصميم UI/UX؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف المدة حسب تعقيد المشروع. المشاريع الصغيرة قد تستغرق 2-3 أسابيع، المتوسطة 4-6 أسابيع، والكبيرة 8-12 أسبوعاً. نقدم جدول زمني مفصل بعد تقييم المشروع.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>هل تقدمون اختبارات تجربة المستخدم؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقوم بإجراء اختبارات مع مستخدمين حقيقيين في مراحل مختلفة من التصميم. نسجل الملاحظات ونحسن التصميم بناءً على النتائج لضمان أفضل تجربة ممكنة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>هل يمكنني الحصول على ملفات التصميم بعد الانتهاء؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، نسلم جميع ملفات التصميم (Figma، Adobe XD، أو الملفات المصدرية) مع دليل استخدام شامل ونظام تصميم متكامل لمساعدة فريق التطوير.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>هل تصممون لكل منصة على حدة؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نصمم لكل منصة على حدة مع الأخذ في الاعتبار مواصفات وإرشادات كل منصة (iOS Human Interface Guidelines، Material Design لنظام Android)، لضمان تجربة أصلية للمستخدم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">هل لديك منتج رقمي بحاجة لتصميم متميز؟</h2>
+            <p data-aos="fade-up" data-aos-delay="100">دعنا نساعدك في خلق تجربة مستخدم لا تُنسى</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20تصميم%20UI/UX" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>خدمات الاستضافة | تك - أفضل شركة استضافة مواقع</title>
+    <meta name="description" content="نقدم خدمات استضافة مواقع عالية الجودة: استضافة مشتركة، سحابية، مخصصة، VPS، ووردبريس، مع دعم فني 24/7 وأمان متقدم. استضف موقعك مع أفضل شركة استضافة في الوطن العربي.">
+    <meta name="keywords" content="استضافة مواقع, استضافة سحابية, استضافة VPS, استضافة ووردبريس, استضافة مشتركة, سيرفر مخصص, نطاقات, دعم فني">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="خدمات الاستضافة | تك">
+    <meta property="og:description" content="استضافة مواقع عالية الجودة مع دعم فني 24/7 وأمان متقدم">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة الاستضافة */
+        .page-header {
+            background: linear-gradient(135deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* أنواع الاستضافة */
+        .hosting-types {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .type-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .type-card.popular {
+            border: 2px solid var(--primary-color);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .type-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .type-icon i {
+            font-size: 3rem;
+            color: #fff;
+        }
+        
+        .type-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #666;
+        }
+        
+        .type-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+            margin: 20px 0;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+        }
+        
+        .features-list li i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: #fff;
+        }
+        
+        /* مميزات الاستضافة */
+        .features-section {
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* خطط الاستضافة */
+        .plans-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .plan-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .plan-card.highlight {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            color: #fff;
+        }
+        
+        .plan-card.highlight h3,
+        .plan-card.highlight .price,
+        .plan-card.highlight .price span,
+        .plan-card.highlight p,
+        .plan-card.highlight .features-list li,
+        .plan-card.highlight .features-list li i {
+            color: #fff;
+        }
+        
+        .plan-card.highlight .btn-primary {
+            background: #fff;
+            color: var(--primary-color);
+        }
+        
+        .plan-card.highlight .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .plan-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .plan-price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        
+        /* ضمانات */
+        .guarantee-section {
+            padding: 80px 0;
+        }
+        
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .guarantee-item {
+            text-align: center;
+            padding: 30px;
+            background: var(--white-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .guarantee-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .guarantee-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .guarantee-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .guarantee-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .guarantee-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(0, 140, 255, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي */
+        .dark-mode .type-card,
+        .dark-mode .feature-card,
+        .dark-mode .plan-card,
+        .dark-mode .guarantee-item,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .type-card p,
+        .dark-mode .type-card .price span,
+        .dark-mode .features-list li,
+        .dark-mode .feature-card p,
+        .dark-mode .guarantee-item p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .hosting-types,
+        .dark-mode .plans-section,
+        .dark-mode .faq-section {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .feature-icon,
+        .dark-mode .guarantee-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .feature-icon i,
+        .dark-mode .guarantee-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+        
+        .dark-mode .price {
+            color: #3a86ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عناء</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>خدمات الاستضافة</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">خدمات الاستضافة</h1>
+            <p data-aos="fade-up" data-aos-delay="100">استضافة عالية الجودة مع أداء متميز وأمان متقدم ودعم فني 24/7</p>
+        </div>
+    </section>
+
+    <!-- Hosting Types Section -->
+    <section class="hosting-types">
+        <div class="container">
+            <h2 data-aos="fade-up">أنواع الاستضافة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">اختر الخطة المناسبة لاحتياجاتك</p>
+            
+            <div class="types-grid">
+                <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-icon">
+                        <i class="bi bi-share"></i>
+                    </div>
+                    <h3>استضافة مشتركة</h3>
+                    <div class="price">$4.99<span>/شهر</span></div>
+                    <p>مثالية للمواقع الصغيرة والمدونات والمواقع الشخصية. خيار اقتصادي وسهل الاستخدام.</p>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> مساحة تخزين 10 جيجابايت</li>
+                        <li><i class="bi bi-check-circle-fill"></i> نطاق مجاني للسنة الأولى</li>
+                        <li><i class="bi bi-check-circle-fill"></i> شهادات SSL مجانية</li>
+                        <li><i class="bi bi-check-circle-fill"></i> دعم فني 24/7</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">اختر الخطة</a>
+                </div>
+                
+                <div class="type-card popular" data-aos="fade-up" data-aos-delay="300">
+                    <div class="popular-badge">الأكثر طلباً</div>
+                    <div class="type-icon">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+                    <h3>استضافة سحابية</h3>
+                    <div class="price">$9.99<span>/شهر</span></div>
+                    <p>قابلة للتوسع وفقاً لاحتياجاتك، أداء عالي ومرونة كاملة للمواقع المتوسطة والكبيرة.</p>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> مساحة تخزين 50 جيجابايت</li>
+                        <li><i class="bi bi-check-circle-fill"></i> نطاق مجاني</li>
+                        <li><i class="bi bi-check-circle-fill"></i> شهادات SSL مجانية</li>
+                        <li><i class="bi bi-check-circle-fill"></i> نسخ احتياطي يومي</li>
+                        <li><i class="bi bi-check-circle-fill"></i> دعم فني أولوية</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">اختر الخطة</a>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="type-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <h3>VPS</h3>
+                    <div class="price">$24.99<span>/شهر</span></div>
+                    <p>خوادم افتراضية خاصة مع موارد مخصصة للمواقع الكبيرة والمتاجر الإلكترونية.</p>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> 4 نواة CPU</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 8 جيجابايت رام</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 100 جيجابايت تخزين SSD</li>
+                        <li><i class="bi bi-check-circle-fill"></i> وصول كامل root</li>
+                        <li><i class="bi bi-check-circle-fill"></i> دعم فني متخصص</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">اختر الخطة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات استضافتنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ما الذي يميز خدمات الاستضافة لدينا؟</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h4>سرعة فائقة</h4>
+                    <p>خوادم مزودة بأحدث تقنيات SSD و CDN لضمان سرعة تحميل فائقة لموقعك.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>أمان متقدم</h4>
+                    <p>حماية متكاملة من الاختراقات، جدران حماية، وشهادات SSL مجانية.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h4>ضمان 99.9%</h4>
+                    <p>نضمن تشغيل موقعك بدون انقطاع مع ضمان استمرارية الخدمة بنسبة 99.9%.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>دعم فني 24/7</h4>
+                    <p>فريق دعم متاح على مدار الساعة لمساعدتك في أي مشكلة تواجهها.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h4>نسخ احتياطي يومي</h4>
+                    <p>نسخ احتياطي يومي لبيانات موقعك لضمان عدم فقدان أي معلومات مهمة.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h4>نطاق مجاني</h4>
+                    <p>نطاق مجاني للسنة الأولى مع جميع خطط الاستضافة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans-section">
+        <div class="container">
+            <h2 data-aos="fade-up">خطط استضافة ووردبريس</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">خطط مخصصة لمواقع ووردبريس</p>
+            
+            <div class="plans-grid">
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>أساسي</h3>
+                    <div class="plan-price">$6.99<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> موقع واحد</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 10 جيجابايت تخزين</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 10000 زيارة شهرياً</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL مجاني</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">اختر الخطة</a>
+                </div>
+                
+                <div class="plan-card highlight" data-aos="fade-up" data-aos-delay="300">
+                    <h3>احترافي</h3>
+                    <div class="plan-price">$12.99<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> 5 مواقع</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 50 جيجابايت تخزين</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 50000 زيارة شهرياً</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL مجاني</li>
+                        <li><i class="bi bi-check-circle-fill"></i> CDN مجاني</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">اختر الخطة</a>
+                </div>
+                
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>متقدم</h3>
+                    <div class="plan-price">$24.99<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> مواقع غير محدودة</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 200 جيجابايت تخزين</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 200000 زيارة شهرياً</li>
+                        <li><i class="bi bi-check-circle-fill"></i> SSL مجاني</li>
+                        <li><i class="bi bi-check-circle-fill"></i> CDN مجاني</li>
+                        <li><i class="bi bi-check-circle-fill"></i> دعم أولوية</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">اختر الخطة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 data-aos="fade-up">ضماناتنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نحن نضمن رضاك الكامل</p>
+            
+            <div class="guarantee-grid">
+                <div class="guarantee-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="guarantee-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h4>استرداد الأموال</h4>
+                    <p>ضمان استرداد الأموال خلال 30 يوماً إذا لم تكن راضياً عن الخدمة</p>
+                </div>
+                
+                <div class="guarantee-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="guarantee-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>ضمان الأداء</h4>
+                    <p>نضمن أداء عالياً وسرعة تحميل ممتازة لموقعك</p>
+                </div>
+                
+                <div class="guarantee-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="guarantee-icon">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h4>ضمان الأمان</h4>
+                    <p>حماية متكاملة من الاختراقات والهجمات الإلكترونية</p>
+                </div>
+                
+                <div class="guarantee-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="guarantee-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>ضمان الدعم</h4>
+                    <p>دعم فني متاح 24/7 مع وقت استجابة أقل من 30 دقيقة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن الاستضافة</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>ما هو الفرق بين الاستضافة المشتركة والسحابية؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الاستضافة المشتركة: موارد الخادم مشتركة بين عدة مستخدمين، مناسبة للمواقع الصغيرة. الاستضافة السحابية: موارد مرنة وقابلة للتوسع حسب احتياجاتك، مناسبة للمواقع المتوسطة والكبيرة التي تشهد نمواً مستمراً.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>هل يمكنني ترقية خطتي لاحقاً؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك ترقية خطتك في أي وقت دون أي رسوم إضافية. سنساعدك في عملية الترقية ونقل الموقع بأمان إلى الخطة الجديدة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>هل تقدمون نسخ احتياطي للبيانات؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقوم بعمل نسخ احتياطي يومي لجميع مواقعك. يمكنك استعادة النسخ الاحتياطية بسهولة من خلال لوحة التحكم في أي وقت.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>ما هو مستوى الدعم الفني المقدم؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم دعم فني على مدار الساعة طوال أيام الأسبوع عبر الدردشة المباشرة والتذاكر والبريد الإلكتروني. فريقنا متخصص في حل المشكلات التقنية بسرعة وكفاءة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>هل تقدمون ضمان استرداد الأموال؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم ضمان استرداد الأموال لمدة 30 يوماً. إذا لم تكن راضياً عن خدماتنا لأي سبب، سنقوم باسترداد كامل المبلغ خلال 30 يوماً من تاريخ الاشتراك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">انطلق مع أفضل استضافة</h2>
+            <p data-aos="fade-up" data-aos-delay="100">اختر الخطة المناسبة لموقعك واستمتع بأداء متميز وأمان متقدم</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20الاستضافة" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>إدارة الصفحات | تك - أفضل شركة إدارة صفحات التواصل الاجتماعي</title>
+    <meta name="description" content="نقدم خدمات إدارة الصفحات الاحترافية على منصات التواصل الاجتماعي: إدارة محتوى، جدولة منشورات، تفاعل مع المتابعين، تحليل البيانات، وزيادة التفاعل. نضمن لك حضوراً قوياً ومستداماً على الإنترنت.">
+    <meta name="keywords" content="إدارة صفحات, إدارة فيسبوك, إدارة انستقرام, إدارة تيك توك, إدارة تويتر, إدارة لينكد إن, محتوى تسويقي, تفاعل مع المتابعين">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="إدارة الصفحات | تك">
+    <meta property="og:description" content="نضمن لك حضوراً قوياً ومستداماً على منصات التواصل الاجتماعي">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة إدارة الصفحات */
+        .page-header {
+            background: linear-gradient(135deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* خدمات إدارة الصفحات - بنفس تنسيق الموقع الرئيسي */
+        .services-section {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* أيقونة دائرية في الأعلى */
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 20px rgba(0, 140, 255, 0.3);
+            transition: all 0.4s ease;
+        }
+        
+        .service-card:hover .icon-box {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0, 140, 255, 0.4);
+        }
+        
+        .icon-box i {
+            font-size: 2.5rem;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        /* العنوان تحت الأيقونة */
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+        
+        /* النص تحت العنوان */
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+            transition: color 0.3s ease;
+        }
+        
+        /* تأثير hover */
+        .service-card:hover h3,
+        .service-card:hover p {
+            color: #fff;
+        }
+        
+        /* المنصات التي نديرها */
+        .platforms-section {
+            padding: 80px 0;
+        }
+        
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .platform-item {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .platform-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .platform-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .platform-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .platform-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .platform-item p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+        
+        /* مميزات خدماتنا */
+        .features-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* عملية العمل */
+        .process-section {
+            padding: 80px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            background: var(--white-color);
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* نتائج وإحصائيات */
+        .stats-section {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            padding: 80px 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .stats-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .stats-section h2::after {
+            background-color: #fff;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* أدوات إدارة الصفحات */
+        .tools-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tool-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .tool-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .tool-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .tool-item p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(0, 140, 255, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي */
+        .dark-mode .service-card,
+        .dark-mode .platform-item,
+        .dark-mode .feature-card,
+        .dark-mode .step,
+        .dark-mode .tool-item,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .service-card p,
+        .dark-mode .platform-item p,
+        .dark-mode .feature-card p,
+        .dark-mode .step p,
+        .dark-mode .tool-item p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .services-section,
+        .dark-mode .features-section,
+        .dark-mode .tools-section {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .platform-icon,
+        .dark-mode .feature-icon,
+        .dark-mode .tool-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .platform-icon i,
+        .dark-mode .feature-icon i,
+        .dark-mode .tool-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+        
+        /* تأثير hover على service-card في الوضع الليلي */
+        .dark-mode .service-card:hover h3,
+        .dark-mode .service-card:hover p {
+            color: #fff;
+        }
+        .service-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-box {
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عناء </a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>إدارة الصفحات</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">إدارة الصفحات</h1>
+            <p data-aos="fade-up" data-aos-delay="100">نبني حضوراً قوياً لعلامتك التجارية وندير صفحاتك باحترافية</p>
+        </div>
+    </section>
+
+    <!-- Services Section - بنفس ترتيب الموقع الرئيسي -->
+    <section class="services-section">
+        <div class="container">
+            <h2 data-aos="fade-up">خدمات إدارة الصفحات</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">حلول متكاملة لإدارة صفحاتك على منصات التواصل</p>
+            
+            <div class="service-cards">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <i class="bi bi-file-text"></i>
+                    </div>
+                    <h3>إدارة المحتوى</h3>
+                    <p>نخطط وننشئ محتوى جذاب يناسب جمهورك المستهدف، مع جدولة منشورات منتظمة على جميع المنصات.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3>التفاعل مع المتابعين</h3>
+                    <p>نرد على التعليقات والرسائل بشكل احترافي، وندير المحادثات لبناء علاقات قوية مع جمهورك.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box">
+                        <i class="bi bi-calendar-week"></i>
+                    </div>
+                    <h3>جدولة المنشورات</h3>
+                    <p>ننظم جدولاً زمنياً للنشر يضمن تواجداً مستمراً وفعالاً على منصات التواصل.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon-box">
+                        <i class="bi bi-bar-chart"></i>
+                    </div>
+                    <h3>تحليل الأداء</h3>
+                    <p>نقدم تقارير دورية تحليلية عن أداء صفحاتك، مع توصيات للتحسين المستمر.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h3>زيادة التفاعل</h3>
+                    <p>نستخدم استراتيجيات متقدمة لزيادة التفاعل والمشاركة على صفحاتك.</p>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="icon-box">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3>تنمية المتابعين</h3>
+                    <p>نعمل على زيادة عدد المتابعين العضويين المهتمين بمحتواك ومنتجاتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section class="platforms-section">
+        <div class="container">
+            <h2 data-aos="fade-up">المنصات التي نديرها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم خدماتنا على جميع منصات التواصل الاجتماعي</p>
+            
+            <div class="platforms-grid">
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <h4>فيسبوك</h4>
+                    <p>إدارة صفحات الفيسبوك، نشر محتوى متنوع، تفاعل مع المتابعين، وإعلانات ممولة</p>
+                </div>
+                
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="platform-icon">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <h4>انستقرام</h4>
+                    <p>إدارة حسابات انستقرام، تصميم محتوى بصري، ستوري، ريلز، وزيادة المتابعين</p>
+                </div>
+                
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="platform-icon">
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                    <h4>تيك توك</h4>
+                    <p>إدارة حسابات تيك توك، إنشاء محتوى فيديو تفاعلي، وزيادة الانتشار</p>
+                </div>
+                
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="platform-icon">
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                    <h4>تويتر (X)</h4>
+                    <p>إدارة التغريدات، تفاعل مع المتابعين، وتتبع اتجاهات السوق</p>
+                </div>
+                
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="platform-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h4>لينكد إن</h4>
+                    <p>إدارة صفحات الشركات، محتوى مهني، وبناء علاقات B2B</p>
+                </div>
+                
+                <div class="platform-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="platform-icon">
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <h4>يوتيوب</h4>
+                    <p>إدارة قنوات يوتيوب، جدولة الفيديوهات، وتحسين ظهور القناة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات خدمات إدارة الصفحات</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ما الذي يميز خدماتنا؟</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h4>توفير الوقت والجهد</h4>
+                    <p>نتولى إدارة صفحاتك بالكامل لتتفرغ أنت لإدارة أعمالك الأساسية.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-bullseye"></i>
+                    </div>
+                    <h4>استهداف دقيق</h4>
+                    <p>نحدد جمهورك المستهدف بدقة ونصمم محتوى يناسب اهتماماتهم.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>نتائج قابلة للقياس</h4>
+                    <p>نقدم تقارير دورية توضح نمو صفحاتك وزيادة التفاعل.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-chat-heart"></i>
+                    </div>
+                    <h4>تفاعل احترافي</h4>
+                    <p>نرد على العملاء بلغة احترافية تعزز سمعة علامتك التجارية.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h4>جدولة منظمة</h4>
+                    <p>نضمن تواجداً مستمراً وفعالاً على منصات التواصل.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>أمان وحماية</h4>
+                    <p>نحمي صفحاتك من الاختراقات ونضمن سلامة بياناتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 data-aos="fade-up">نتائجنا مع العملاء</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100" style="color: rgba(255,255,255,0.9);">أرقام تتحدث عن نجاحاتنا</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">+500%</div>
+                    <div class="stat-label">زيادة في التفاعل</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="stat-number">+300%</div>
+                    <div class="stat-label">زيادة في المتابعين</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">دعم فني</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">رضا العملاء</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 data-aos="fade-up">كيف ندير صفحاتك؟</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">منهجية عملنا لتحقيق أفضل النتائج</p>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h4>تحليل وتقييم</h4>
+                    <p>نقوم بتحليل وضعك الحالي ووضع خطة مخصصة لصفحاتك</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h4>تخطيط المحتوى</h4>
+                    <p>نضع خطة محتوى متكاملة تناسب جمهورك وأهدافك</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h4>إنشاء المحتوى</h4>
+                    <p>نصمم محتوى جذاب ومناسب لكل منصة</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h4>جدولة النشر</h4>
+                    <p>ننشر المحتوى في الأوقات المثالية لجمهورك</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <h4>التفاعل والمتابعة</h4>
+                    <p>نرد على التعليقات والرسائل بشكل احترافي</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                    <div class="step-number">6</div>
+                    <h4>التحليل والتطوير</h4>
+                    <p>نحلل النتائج ونطور الاستراتيجية باستمرار</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 data-aos="fade-up">أدوات إدارة الصفحات</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أحدث الأدوات لتحقيق أفضل النتائج</p>
+            
+            <div class="tools-grid">
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="bi bi-calendar-week"></i>
+                    </div>
+                    <h4>Hootsuite</h4>
+                    <p>جدولة المنشورات وإدارة المحتوى</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tool-icon">
+                        <i class="bi bi-bar-chart"></i>
+                    </div>
+                    <h4>Buffer</h4>
+                    <p>تحليل أداء المنشورات</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="bi bi-file-image"></i>
+                    </div>
+                    <h4>Canva</h4>
+                    <p>تصميم محتوى بصري جذاب</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tool-icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>Meta Business Suite</h4>
+                    <p>إدارة صفحات فيسبوك وانستقرام</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4>Brand24</h4>
+                    <p>مراقبة سمعة العلامة التجارية</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tool-icon">
+                        <i class="bi bi-envelope-paper"></i>
+                    </div>
+                    <h4>Mailchimp</h4>
+                    <p>إدارة البريد الإلكتروني والتسويق</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن إدارة الصفحات</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>كم مرة تنشرون في الأسبوع؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ننشر محتوى يومياً (7 أيام في الأسبوع) بمعدل 3-5 منشورات يومياً حسب المنصة والاستراتيجية المتفق عليها. نضمن تواجداً مستمراً وفعالاً لصفحاتك.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>هل تقدمون تقارير دورية عن الأداء؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم تقارير أسبوعية وشهرية شاملة توضح نمو المتابعين، معدل التفاعل، أفضل المنشورات، وتحليلات مفصلة عن أداء صفحاتك.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>هل يمكنني المشاركة في صنع المحتوى؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، نحن نرحب بمشاركتك في توجيه المحتوى. نعمل معاً لوضع خطة المحتوى التي تعكس رؤيتك وأهدافك، ويمكنك الموافقة على المنشورات قبل النشر.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>كم عدد المنصات التي تديرونها؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ندير جميع منصات التواصل الاجتماعي: فيسبوك، انستقرام، تيك توك، تويتر، لينكد إن، يوتيوب. يمكنك اختيار المنصات المناسبة لعملك، ونحن نديرها باحترافية.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>هل تتعاملون مع الردود السلبية؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، لدينا فريق مدرب على التعامل مع جميع أنواع التعليقات والرسائل. نتعامل مع الردود السلبية بحكمة واحترافية لتحويل التجربة السلبية إلى إيجابية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">هل تريد حضوراً قوياً على الإنترنت؟</h2>
+            <p data-aos="fade-up" data-aos-delay="100">دعنا ندير صفحاتك ونبني علامتك التجارية على منصات التواصل</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20إدارة%20الصفحات" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>

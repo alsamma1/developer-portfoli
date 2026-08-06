@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>خدمات الجرافيكس والتصميم | تك - أفضل شركة تصميم جرافيك</title>
+    <meta name="description" content="نقدم خدمات الجرافيكس والتصميم الاحترافية: هويات بصرية، شعارات، تصاميم إعلانية، تصاميم وسائل التواصل الاجتماعي، مطبوعات، وأعمال فنية مميزة تعكس هوية علامتك التجارية.">
+    <meta name="keywords" content="تصميم جرافيك, جرافيكس, تصميم شعارات, هوية بصرية, تصاميم إعلانية, تصميم منشورات, تصميم مطبوعات, شركة تصميم">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="خدمات الجرافيكس والتصميم | تك">
+    <meta property="og:description" content="نصمم هويات بصرية مميزة وشعارات احترافية تعكس قوة علامتك التجارية">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة الجرافيكس والتصميم */
+        .page-header {
+            background: linear-gradient(135deg, var(--gradient-color-start) 0%, var(--gradient-color-end) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* أنواع خدمات الجرافيكس */
+        .services-types {
+            padding: 80px 0;
+            background: var(--light-bg);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .type-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .type-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .type-icon i {
+            font-size: 3rem;
+            color: #fff;
+        }
+        
+        .type-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .type-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* أدوات التصميم */
+        .tools-section {
+            padding: 80px 0;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tool-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .tool-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .tool-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .tool-item p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        /* مميزات خدماتنا */
+        .features-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: var(--white-color);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 140, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* معرض الأعمال */
+        .portfolio-showcase {
+            padding: 80px 0;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .showcase-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+        }
+        
+        .showcase-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 140, 255, 0.95), rgba(0, 77, 154, 0.85));
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-overlay {
+            opacity: 1;
+        }
+        
+        .showcase-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .showcase-content {
+            color: #fff;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-content {
+            transform: translateY(0);
+        }
+        
+        .showcase-content h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .showcase-content p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* عملية العمل */
+        .process-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            background: var(--white-color);
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(0, 140, 255, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--gradient-color-start), var(--gradient-color-end));
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي */
+        .dark-mode .type-card,
+        .dark-mode .tool-item,
+        .dark-mode .feature-card,
+        .dark-mode .step,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .type-card p,
+        .dark-mode .tool-item p,
+        .dark-mode .feature-card p,
+        .dark-mode .step p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .services-types,
+        .dark-mode .features-section,
+        .dark-mode .process-section {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .tool-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .tool-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .feature-icon {
+            background: rgba(58, 134, 255, 0.2);
+        }
+        
+        .dark-mode .feature-icon i {
+            color: #3a86ff;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(58, 134, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عناء</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>الجرافيكس والتصميم</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">خدمات الجرافيكس والتصميم</h1>
+            <p data-aos="fade-up" data-aos-delay="100">نصنع هويات بصرية مميزة تعكس قوة علامتك التجارية وتجذب انتباه عملائك</p>
+        </div>
+    </section>
+
+    <!-- Services Types Section -->
+    <section class="services-types">
+        <div class="container">
+            <h2 data-aos="fade-up">خدمات التصميم الجرافيكي</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم مجموعة متكاملة من خدمات التصميم لجميع احتياجاتك</p>
+            
+            <div class="types-grid">
+                <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-icon">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+                    <h3>هوية بصرية وشعارات</h3>
+                    <p>نصمم هويات بصرية متكاملة وشعارات احترافية تعكس رسالة علامتك التجارية وتميزها عن المنافسين.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="type-icon">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <h3>تصاميم وسائل التواصل</h3>
+                    <p>تصاميم جذابة لمنشورات فيسبوك، انستقرام، تويتر، لينكد إن، تيك توك تزيد من تفاعل جمهورك.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="type-icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <h3>تصاميم إعلانية</h3>
+                    <p>إعلانات مطبوعة ورقمية جذابة، بانرات، بوسترات، بروشورات، وكتالوجات تعزز حملاتك التسويقية.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="type-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h3>مطبوعات ومواد تسويقية</h3>
+                    <p>تصميم بطاقات أعمال، مطويات، كتيبات، أغلفة، ومستندات احترافية تعكس احترافية عملك.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="type-icon">
+                        <i class="bi bi-box"></i>
+                    </div>
+                    <h3>تغليف المنتجات</h3>
+                    <p>تصميم عبوات وتغليف مميز يجذب العملاء ويعزز تجربة المنتج من اللحظة الأولى.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="type-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+                    <h3>رسوم توضيحية وانفوجرافيك</h3>
+                    <p>رسوم توضيحية مخصصة وانفوجرافيك تفاعلي يبسط المعلومات المعقدة بشكل جذاب.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 data-aos="fade-up">أدوات التصميم التي نستخدمها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أحدث البرامج لتصميم احترافي</p>
+            
+            <div class="tools-grid">
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="bi bi-adobe"></i>
+                    </div>
+                    <h4>Adobe Photoshop</h4>
+                    <p>تصميم وتحرير الصور والرسومات</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tool-icon">
+                        <i class="bi bi-brush"></i>
+                    </div>
+                    <h4>Adobe Illustrator</h4>
+                    <p>تصميم الشعارات والرسوم المتجهة</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="bi bi-layout-text-window"></i>
+                    </div>
+                    <h4>Adobe InDesign</h4>
+                    <p>تصميم المطبوعات والكتيبات</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tool-icon">
+                        <i class="bi bi-figma"></i>
+                    </div>
+                    <h4>Figma</h4>
+                    <p>تصميم واجهات المستخدم</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="bi bi-camera"></i>
+                    </div>
+                    <h4>Lightroom</h4>
+                    <p>معالجة وتعديل الصور الاحترافية</p>
+                </div>
+                
+                <div class="tool-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tool-icon">
+                        <i class="bi bi-motion"></i>
+                    </div>
+                    <h4>After Effects</h4>
+                    <p>رسوم متحركة ومؤثرات بصرية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات خدمات التصميم لدينا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">ما الذي يجعل تصاميمنا مميزة؟</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>إبداع لا محدود</h4>
+                    <p>نقدم أفكاراً مبتكرة وتصاميم فريدة تعكس شخصية علامتك التجارية وتميزك عن المنافسين.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-eye"></i>
+                    </div>
+                    <h4>اهتمام بالتفاصيل</h4>
+                    <p>نراعي كل التفاصيل الدقيقة في التصميم لضمان نتائج احترافية خالية من الأخطاء.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-clock-history"></i>
+                    </div>
+                    <h4>التسليم في الوقت المحدد</h4>
+                    <p>نلتزم بالمواعيد المتفق عليها ونسلم التصاميم في الوقت المحدد دون تأخير.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <h4>تعديلات غير محدودة</h4>
+                    <p>نوفر تعديلات غير محدودة حتى تصل التصميمات إلى رضاك التام.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                    </div>
+                    <h4>ملفات مصدرية كاملة</h4>
+                    <p>نسلم جميع الملفات المصدرية بصيغ مختلفة لاستخدامها في أي وقت.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-chat-heart"></i>
+                    </div>
+                    <h4>دعم واستشارات</h4>
+                    <p>نقدم استشارات مجانية ونساعدك في اختيار التصميم المناسب لاحتياجاتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <h2 data-aos="fade-up">أعمالنا في التصميم الجرافيكي</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نماذج من تصاميمنا التي نعتز بها</p>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="logo.jpg" alt="تصميم شعارات">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>شعارات احترافية</h4>
+                            <p>تصاميم شعارات مميزة لعشرات الشركات</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="g2.jpg" alt="هوية بصرية متكاملة">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>هويات بصرية متكاملة</h4>
+                            <p>نظم تصميم متكاملة للعلامات التجارية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="g3.png" alt="تصاميم منشورات التواصل">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>منشورات وسائل التواصل</h4>
+                            <p>تصاميم جذابة لمواقع التواصل الاجتماعي</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="g4.jpg" alt="مطبوعات وكتيبات">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>مطبوعات وكتيبات</h4>
+                            <p>تصاميم مطبوعات احترافية للشركات</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="g5.jpg" alt="تصميم تغليف منتجات">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>تغليف منتجات</h4>
+                            <p>تصاميم عبوات وتغليف جذابة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="g6.png" alt="انفوجرافيك تفاعلي">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>انفوجرافيك تفاعلي</h4>
+                            <p>تصميم رسوم بيانية معلوماتية جذابة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <a href="index.html#portfolio" class="btn btn-primary">شاهد المزيد من أعمالنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 data-aos="fade-up">عملية التصميم</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">كيف نعمل لتحقيق أفضل النتائج</p>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h4>فهم المتطلبات</h4>
+                    <p>نستمع لأفكارك ونتعرف على أهدافك واحتياجاتك بدقة</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h4>البحث والتحليل</h4>
+                    <p>نقوم بتحليل السوق والمنافسين ودراسة جمهورك المستهدف</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h4>التصور الأولي</h4>
+                    <p>نقدم أفكاراً أولية ومسودات لمشروع التصميم</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h4>التطوير والتنفيذ</h4>
+                    <p>ننفذ التصميم النهائي بأعلى جودة ودقة</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <h4>المراجعة والتعديل</h4>
+                    <p>نقدم التصميم للمراجعة ونجري التعديلات المطلوبة</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                    <div class="step-number">6</div>
+                    <h4>التسليم والدعم</h4>
+                    <p>نسلم الملفات النهائية ونقدم دعمًا مستمرًا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن التصميم الجرافيكي</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>كم تستغرق مدة تصميم الشعار؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف المدة حسب تعقيد التصميم وعدد التعديلات المطلوبة. عادةً ما يستغرق تصميم الشعار من 3 إلى 7 أيام عمل، مع تقديم عدة خيارات ومراجعات متعددة حتى الوصول للتصميم المثالي.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>هل تقدمون ملفات التصميم المصدرية؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نسلم جميع الملفات المصدرية (AI، PSD، EPS، PDF، PNG، JPG) بصيغ متعددة لتتمكن من استخدام التصميم في أي وقت ولأي غرض تجاري.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>كم عدد التعديلات المتاحة؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم تعديلات غير محدودة حتى تصل التصميمات إلى رضاك التام. نحرص على أن تكون راضياً 100% عن التصميم النهائي قبل إغلاق المشروع.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>هل تصممون لجميع المنصات؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، نصمم لجميع المنصات: وسائل التواصل الاجتماعي (فيسبوك، انستقرام، تويتر، لينكد إن)، المواقع الإلكترونية، المطبوعات، والشاشات الرقمية بجميع أحجامها.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>كيف تتعاملون مع حقوق الملكية الفكرية؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>جميع التصاميم التي نقدمها هي ملكية فكرية خالصة للعميل بعد التسليم. نوقع على اتفاقية تضمن حقوقك الكاملة في استخدام التصميم تجارياً دون أي قيود.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">هل تحتاج لتصميم مميز لعلامتك التجارية؟</h2>
+            <p data-aos="fade-up" data-aos-delay="100">دعنا نساعدك في خلق هوية بصرية لا تُنسى</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20التصميم%20الجرافيكي" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>

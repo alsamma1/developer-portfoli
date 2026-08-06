@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Meta Tags -->
+    <title>تصميم وتطوير مواقع الويب | تك - أفضل شركة تصميم مواقع</title>
+    <meta name="description" content="نقدم خدمات تصميم وتطوير مواقع الويب المتكاملة. مواقع عصرية، سريعة، ومتجاوبة مع جميع الأجهزة. نوفر حلول متاجر إلكترونية، مواقع شركات، وأنظمة إدارة محتوى احترافية.">
+    <meta name="keywords" content="تصميم مواقع, تطوير مواقع, مواقع إلكترونية, متاجر إلكترونية, تصميم متجاوب, شركة تصميم مواقع, برمجة مواقع">
+    <meta name="author" content="تك للبرمجيات">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="تصميم وتطوير مواقع الويب | تك">
+    <meta property="og:description" content="حلول متكاملة لتصميم وتطوير مواقع الويب العصرية والمتجاوبة">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* تنسيقات خاصة بصفحة المواقع الإلكترونية */
+        .page-header {
+            background: linear-gradient(135deg, rgba(0, 100, 200, 0.9) 0%,rgba(0, 70, 150, 0.95));
+            padding: 120px 0 60px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&h=400&fit=crop') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        @media (min-width: 768px) {
+            .page-header {
+                padding: 150px 0 80px;
+            }
+            .page-header h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        /* أنواع المواقع */
+        .website-types {
+            padding: 60px 0;
+            background: var(--light-bg);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .type-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .type-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #111a99, #38a9ef);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+        
+        .type-icon i {
+            font-size: 3.5rem;
+            color: #fff;
+        }
+        
+        .type-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .type-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* التقنيات المستخدمة */
+        .tech-section {
+            padding: 80px 0;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .tech-item {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background: var(--white-color);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tech-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tech-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(17, 28, 153, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .tech-icon i {
+            font-size: 2.5rem;
+            color: #0b1983;
+        }
+        
+        .tech-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .tech-item p {
+            color: #893030;
+            font-size: 0.9rem;
+        }
+        
+        /* مميزات المواقع */
+        .features-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            background: var(--white-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(17, 119, 153, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+            color: #d5dae7;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* معرض الأعمال */
+        .portfolio-showcase {
+            padding: 80px 0;
+        }
+        
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .showcase-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+        
+        .showcase-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .showcase-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(17, 53, 153, 0.95), rgba(17, 80, 153, 0.7));
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-overlay {
+            opacity: 1;
+        }
+        
+        .showcase-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .showcase-content {
+            color: #fff;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+        
+        .showcase-item:hover .showcase-content {
+            transform: translateY(0);
+        }
+        
+        .showcase-content h4 {
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .showcase-content p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* عملية العمل */
+        .process-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #184ec3;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: -15px;
+            width: calc(100% - 60px);
+            height: 2px;
+            background: #112c99;
+            opacity: 0.3;
+        }
+        
+        .step:last-child::after {
+            display: none;
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .step::after {
+                display: none;
+            }
+        }
+        
+        /* الأسئلة الشائعة */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            background: var(--white-color);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(17, 153, 142, 0.05);
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+            color: #112a99;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px;
+            max-height: 300px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #115099, #a8bbd2);
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+        
+        .cta-section p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-outline-light {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        
+        .btn-outline-light:hover {
+            background: #fff;
+            color: #11998e;
+            transform: translateY(-3px);
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb .separator {
+            margin: 0 10px;
+            color: #999;
+        }
+        
+        /* تنسيقات الوضع الليلي لهذه الصفحة */
+        .dark-mode .type-card,
+        .dark-mode .tech-item,
+        .dark-mode .feature-card,
+        .dark-mode .faq-item {
+            background: #0a2a3f;
+        }
+        
+        .dark-mode .type-card p,
+        .dark-mode .tech-item p,
+        .dark-mode .feature-card p,
+        .dark-mode .faq-answer {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .website-types,
+        .dark-mode .features-section,
+        .dark-mode .process-section {
+            background: #0a1a2f;
+        }
+        
+        .dark-mode .step p {
+            color: #b8d0ff;
+        }
+        
+        .dark-mode .tech-icon {
+            background: rgba(56, 239, 125, 0.15);
+        }
+        
+        .dark-mode .tech-icon i {
+            color: #38ef7d;
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: rgba(56, 239, 125, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="nav-links-wrapper">
+                    <button class="close-menu" aria-label="Close navigation menu"><i class="bi bi-x"></i></button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">عنا</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#portfolio">أعمالنا</a></li>
+                        <li><a href="index.html#contact">تواصل </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="تك للبرمجيات" class="site-logo">
+            </a>
+            <div class="header-social-cta">
+                <div class="social-icons">
+                    <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="الوضع الليلي">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">الرئيسية</a>
+            <span class="separator">›</span>
+            <span>المواقع الإلكترونية</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">تصميم وتطوير المواقع الإلكترونية</h1>
+            <p data-aos="fade-up" data-aos-delay="100">نصنع مواقع مميزة تعكس هوية علامتك التجارية وتحقق أهدافك الرقمية</p>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="website-types">
+        <div class="container">
+            <h2 data-aos="fade-up">أنواع المواقع التي نقدمها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">حلول متكاملة تناسب جميع احتياجاتك</p>
+            
+            <div class="types-grid">
+                <div class="type-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="type-icon">
+                        <i class="bi bi-shop"></i>
+                    </div>
+                    <h3>متاجر إلكترونية</h3>
+                    <p>نطور متاجر إلكترونية متكاملة باستخدام WooCommerce و Shopify، مع أنظمة دفع وشحن متطورة، وإدارة منتجات احترافية.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="type-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <h3>مواقع الشركات</h3>
+                    <p>تصميم مواقع تعكس هوية الشركة، مع صفحات تعريفية، خدمات، فريق عمل، وأخبار، مع نظام إدارة محتوى سهل الاستخدام.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="type-icon">
+                        <i class="bi bi-newspaper"></i>
+                    </div>
+                    <h3>بوابات إخبارية</h3>
+                    <p>بوابات إخبارية متكاملة مع أنظمة إدارة المحتوى المتقدمة، ودعم الوسائط المتعددة، وتصنيفات متعددة للمقالات.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="type-icon">
+                        <i class="bi bi-person-badge"></i>
+                    </div>
+                    <h3>مواقع شخصية</h3>
+                    <p>تصميم مواقع شخصية وبورتفوليو احترافية تعرض أعمالك ومهاراتك بأسلوب جذاب ومميز.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="type-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <h3>منصات تعليمية</h3>
+                    <p>منصات تعليمية متكاملة مع أنظمة إدارة الدورات، فيديوهات تفاعلية، اختبارات، وشهادات إنجاز.</p>
+                </div>
+                
+                <div class="type-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="type-icon">
+                        <i class="bi bi-calendar-event"></i>
+                    </div>
+                    <h3>مواقع فعاليات</h3>
+                    <p>مواقع فعاليات ومؤتمرات مع أنظمة حجز وتذاكر، وجداول زمنية، ومعلومات للمشاركين.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Section -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 data-aos="fade-up">التقنيات التي نستخدمها</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أحدث التقنيات لضمان أفضل أداء</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+                    <h4>HTML5 & CSS3</h4>
+                    <p>أكواد نظيفة ومتوافقة مع معايير الويب الحديثة</p>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-icon">
+                        <i class="bi bi-filetype-js"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>تفاعلات ديناميكية وتجربة مستخدم غنية</p>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="bi bi-filetype-php"></i>
+                    </div>
+                    <h4>PHP & Laravel</h4>
+                    <p>تطوير خلفي قوي وآمن باستخدام أفضل الأطر</p>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <h4>MySQL & MongoDB</h4>
+                    <p>قواعد بيانات سريعة ومنظمة لحفظ البيانات</p>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="bi bi-wordpress"></i>
+                    </div>
+                    <h4>WordPress</h4>
+                    <p>أنظمة إدارة محتوى مرنة وسهلة الاستخدام</p>
+                </div>
+                
+                <div class="tech-item" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tech-icon">
+                        <i class="bi bi-bootstrap"></i>
+                    </div>
+                    <h4>Bootstrap & Tailwind</h4>
+                    <p>تصميمات متجاوبة تناسب جميع الأجهزة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مميزات مواقعنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نضمن لك موقعاً متميزاً بأعلى معايير الجودة</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4>تصميم متجاوب</h4>
+                    <p>موقع يعمل بشكل مثالي على جميع الأجهزة - جوال، تابلت، كمبيوتر</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-icon">
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h4>سرعة فائقة</h4>
+                    <p>تحسين أداء الموقع لضمان سرعة تحميل ممتازة</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>أمان متقدم</h4>
+                    <p>حماية متكاملة من الاختراقات والهجمات الإلكترونية</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4>SEO متقدم</h4>
+                    <p>تهيئة الموقع لمحركات البحث لظهور أفضل في النتائج</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h4>نظام إدارة محتوى</h4>
+                    <p>التحكم الكامل في محتوى الموقع بسهولة وبدون برمجة</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="feature-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>دعم فني</h4>
+                    <p>دعم مستمر بعد الإطلاق لضمان استمرارية العمل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <h2 data-aos="fade-up">أعمالنا في تصميم المواقع</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نماذج من مشاريعنا الناجحة</p>
+            
+            <div class="showcase-grid">
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="w1.png" alt="متجر إلكتروني">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>متجر الأزياء</h4>
+                            <p>متجر إلكتروني متكامل مع أنظمة دفع وشحن</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="w2.jpeg" alt="موقع شركة">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>شركة التقنية</h4>
+                            <p>موقع تعريفي لشركة تقنية مع خدمات متكاملة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="w3.jpeg" alt="بوابة أخبار">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>بوابة الأخبار</h4>
+                            <p>بوابة إخبارية متكاملة مع نظام تصنيف متقدم</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="w4.jpg" alt="منصة تعليمية">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>أكاديمية تك</h4>
+                            <p>منصة تعليمية مع دورات تفاعلية وشهادات</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="w5.png" alt="موقع مطعم">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>مطعم الأصيل</h4>
+                            <p>موقع مطعم مع نظام طلب أونلاين وقائمة رقمية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="w6.jpeg" alt="موقع خدمات">
+                    <div class="showcase-overlay">
+                        <div class="showcase-content">
+                            <h4>خدمات تك</h4>
+                            <p>منصة خدمات متكاملة مع حجز المواعيد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <a href="index.html#portfolio" class="btn btn-primary">شاهد المزيد من أعمالنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 data-aos="fade-up">مراحل تصميم موقعك</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نعمل معك خطوة بخطوة لتحقيق رؤيتك</p>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <h4>فهم المتطلبات</h4>
+                    <p>نستمع لرؤيتك وأهدافك لموقعك</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <h4>التخطيط والهيكلة</h4>
+                    <p>نحدد هيكل الموقع وخريطة الصفحات</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <h4>تصميم الواجهات</h4>
+                    <p>نصمم نماذج تفاعلية للموقع</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <h4>التطوير والبرمجة</h4>
+                    <p>نبرمج الموقع بأحدث التقنيات</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <h4>الاختبار والتجربة</h4>
+                    <p>نختبر الموقع بدقة على جميع الأجهزة</p>
+                </div>
+                
+                <div class="step" data-aos="fade-up" data-aos-delay="700">
+                    <div class="step-number">6</div>
+                    <h4>الإطلاق والدعم</h4>
+                    <p>ننشر الموقع ونوفر الدعم المستمر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">الأسئلة الشائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">أجوبة على أكثر الأسئلة شيوعاً عن تصميم المواقع</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span>كم تستغرق مدة تصميم الموقع؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف المدة حسب نوع الموقع وتعقيده. المواقع التعريفية البسيطة تستغرق 2-3 أسابيع، المتاجر الإلكترونية 4-6 أسابيع، والمنصات المتكاملة 8-12 أسبوعاً. نقدم جدول زمني مفصل بعد دراسة المتطلبات.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <span>هل تقدمون خدمات صيانة بعد الإطلاق؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر باقات صيانة متكاملة تشمل التحديثات الدورية، نسخ احتياطي، مراقبة الأداء، إصلاح الأخطاء، ودعم فني مستمر لضمان عمل موقعك بكفاءة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span>هل الموقع سيكون متوافقاً مع الجوال؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بالتأكيد، جميع مواقعنا مصممة بتقنية Responsive Design مما يجعلها تعمل بشكل مثالي على جميع الأجهزة - جوال، تابلت، كمبيوتر محمول، وشاشات كبيرة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <span>هل يمكنني تحديث محتوى الموقع بنفسي؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر نظام إدارة محتوى سهل الاستخدام يتيح لك تحديث النصوص، الصور، المنتجات، والمقالات بنفسك دون الحاجة لخبرة برمجية. نوفر أيضاً تدريباً على استخدام النظام.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <span>هل تشمل خدمتكم الاستضافة والنطاق؟</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نوفر خدمات استضافة عالية الجودة مع نطاق مجاني للسنة الأولى. يمكنك أيضاً استخدام مزود الاستضافة الخاص بك، ونحن نقدم المساعدة في إعداد الموقع عليه.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">هل لديك فكرة موقع؟</h2>
+            <p data-aos="fade-up" data-aos-delay="100">دعنا نساعدك في تحويل فكرتك إلى موقع إلكتروني متميز</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/967733668040?text=مرحباً،%20أود%20الاستفسار%20عن%20تصميم%20موقع%20إلكتروني" target="_blank" class="btn btn-primary">اطلب استشارة مجانية</a>
+                <a href="index.html#contact" class="btn btn-outline-light">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">عن الشركة</a>
+                <a href="index.html#portfolio">أعمالنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+            </div>
+            <div class="social-icons footer-social">
+                <a href="https://wa.me/967733668040" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://t.me/av47x" target="_blank"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/tech_ye" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/@tech_ye" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/1DmZkmecy7" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 تك للبرمجيات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // تهيئة AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+        
+        // ==================== Dark Mode Toggle ====================
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+        
+        function updateDarkModeIcon(isDark) {
+            if (darkModeToggle) {
+                if (isDark) {
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-stars"></i>';
+                }
+            }
+        }
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme) {
+            htmlElement.classList.add('dark-mode');
+            updateDarkModeIcon(true);
+        } else {
+            updateDarkModeIcon(false);
+        }
+        
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                htmlElement.classList.toggle('dark-mode');
+                
+                if (htmlElement.classList.contains('dark-mode')) {
+                    localStorage.setItem('theme', 'dark');
+                    updateDarkModeIcon(true);
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    updateDarkModeIcon(false);
+                }
+            });
+        }
+        
+        // ==================== FAQ Accordion ====================
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // ==================== Mobile Menu Toggle ====================
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navWrapper = document.querySelector('.nav-links-wrapper');
+        const closeMenu = document.querySelector('.close-menu');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleMenu() {
+            navWrapper.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navWrapper.classList.contains('active') ? 'hidden' : 'auto';
+        }
+        
+        if (menuToggle) menuToggle.addEventListener('click', toggleMenu);
+        if (closeMenu) closeMenu.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        
+        window.scrollTo(0, 0);
+    </script>
+</body>
+</html>
